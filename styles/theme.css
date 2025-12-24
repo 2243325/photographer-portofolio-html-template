@@ -1,0 +1,51 @@
+:root {
+    /* Colors */
+    --hero-text-color: #fff;
+    --standard-text-color: #36454F; /* All the standard text on the website */
+    --standard-links-color: red; /* All the standard links on the website */
+
+    /* Fonts */
+    --standard-text-font: "Roboto";
+    --logo-text-font: "Julius Sans One";
+    --title-text-font: "Gilda Display";
+
+    /* Text Sizes (xl = largest screens & s = smallest screens) */
+    --xl-logo-text: 2rem;
+    --xl-paragraph: 1rem;
+    --xl-title: 6rem;
+    --xl-subtitle: 1.5rem;
+
+    --l-logo-text: 1.4rem;
+    --l-paragraph: 0.875rem;
+
+    /* Do not edit */
+    --logo-text-size: none;
+    --paragraph-size: none;
+    --title-size: none;
+    --subtitle-size: none;
+}
+
+/* Do not edit anything underneath this comment */
+@media screen and (min-width: 1280px) {
+    :root {
+        --logo-text-size: var(--xl-logo-text);
+        --paragraph-size: var(--xl-paragraph);
+        --title-size: var(--xl-title);
+        --subtitle-size: var(--xl-subtitle);
+    }
+}
+
+@media screen and (max-width: 1278px) {
+    :root {
+        --logo-text-size: var(--l-logo-text);
+        --paragraph-size: var(--l-paragraph);
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 480px) {
+
+}

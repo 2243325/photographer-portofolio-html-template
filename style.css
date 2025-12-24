@@ -1,0 +1,151 @@
+@import "styles/theme.css";
+@import "styles/animated-links.css";
+
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: var(--standard-text-color);
+    font-family: var(--standard-text-font), sans-serif;
+}
+
+a {
+    color: var(--standard-text-color);
+    font-size: var(--paragraph-size)
+}
+
+.container {
+    max-width: 1240px;
+    padding: 0px 40px;
+    margin: auto;
+}
+
+/* Navbar */
+nav > .container, nav ul {
+    display: flex;
+    flex-direction: row;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+}
+
+nav > .container {
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav > .container, nav .container > img {
+    height: 100px;
+}
+
+nav h1 a {
+    font-family: var(--logo-text-font);
+    font-size: var(--logo-text-size);
+    text-decoration: none;
+    color: var(--hero-text-color);
+    flex-grow: 1;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    gap: 80px;
+}
+
+nav ul li a {
+    color: var(--hero-text-color);
+}
+
+nav button {
+    display: none;
+    background-color: transparent;
+    border: none;
+    font-size: var(--logo-text-size);
+    justify-content: center;
+    align-items: center;
+}
+
+nav button i {
+    color: var(--standard-text-color);
+}
+
+/* Hero */
+.hero {
+    background-image: url("assets/images/hero-placeholder.png");
+    background-position: center;
+    background-size: cover;
+
+    box-shadow: 10px 109px 101px 23px rgba(0,0,0,0.75) inset;
+    -webkit-box-shadow: 10px 109px 101px 23px rgba(0,0,0,0.75) inset;
+    -moz-box-shadow: 10px 109px 101px 23px rgba(0,0,0,0.75) inset;
+    
+    width: 100vw;
+    height: 80vh;
+    z-index: -10;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero .wrapper h1 {
+    font-size: var(--title-size);
+    font-family: var(--title-text-font);
+    color: var(--hero-text-color)
+}
+
+.hero .wrapper p {
+    letter-spacing: 120%;
+    color: var(--hero-text-color);
+    opacity: 90%;
+    font-size: var(--subtitle-size);
+    font-weight: 300;
+}
+
+.hero .wrapper button {
+    background-color: var(--hero-text-color);
+    border: none;
+    padding: 10px 40px;
+    margin-top: 40px;
+}
+
+/* Do not edit anything underneath this comment */
+@media screen and (max-width: 1278px) {
+    nav ul {
+        gap: 40px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 0px 20px;
+    }
+
+    nav > .container, nav .container > img {
+        height: 60px;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    nav button {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+}
