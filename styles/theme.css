@@ -21,19 +21,19 @@
     --l-paragraph: 0.875rem;
     --l-title: 4.8rem;
     --l-subtitle: 1.2rem;
-    --l-header: 2rem;
+    --l-header: 1.9rem;
 
     --s-logo-text: 1.2rem;
     --s-paragraph: 0.875rem;
     --s-title: 3.9rem;
     --s-subtitle: 1.2rem;
-    --s-header: 2rem;
+    --s-header: 1.8rem;
 
     --xs-logo-text: 1.2rem;
     --xs-paragraph: 0.875rem;
     --xs-title: 3.2rem;
     --xs-subtitle: 1rem;
-    --xs-header: 2rem;
+    --xs-header: 1.7rem;
 
     /* Do not edit */
     --logo-text-size: none;
