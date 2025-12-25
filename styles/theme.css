@@ -1,28 +1,46 @@
 :root {
     /* Colors */
     --hero-text-color: #fff;
-    --standard-text-color: #36454F; /* All the standard text on the website */
+    --standard-text-color: #0d1013; /* All the standard text on the website */
     --standard-links-color: red; /* All the standard links on the website */
 
     /* Fonts */
     --standard-text-font: "Roboto";
     --logo-text-font: "Julius Sans One";
     --title-text-font: "Gilda Display";
+    --header-text-font: "Gilda Display";
 
     /* Text Sizes (xl = largest screens & s = smallest screens) */
     --xl-logo-text: 2rem;
-    --xl-paragraph: 1rem;
-    --xl-title: 6rem;
+    --xl-paragraph: 1.05rem;
+    --xl-title: 5.6rem;
     --xl-subtitle: 1.5rem;
+    --xl-header: 2rem;
 
     --l-logo-text: 1.4rem;
     --l-paragraph: 0.875rem;
+    --l-title: 4.8rem;
+    --l-subtitle: 1.2rem;
+    --l-header: 2rem;
+
+    --s-logo-text: 1.2rem;
+    --s-paragraph: 0.875rem;
+    --s-title: 3.9rem;
+    --s-subtitle: 1.2rem;
+    --s-header: 2rem;
+
+    --xs-logo-text: 1.2rem;
+    --xs-paragraph: 0.875rem;
+    --xs-title: 3.2rem;
+    --xs-subtitle: 1rem;
+    --xs-header: 2rem;
 
     /* Do not edit */
     --logo-text-size: none;
     --paragraph-size: none;
     --title-size: none;
     --subtitle-size: none;
+    --header-size: none;
 }
 
 /* Do not edit anything underneath this comment */
@@ -32,6 +50,7 @@
         --paragraph-size: var(--xl-paragraph);
         --title-size: var(--xl-title);
         --subtitle-size: var(--xl-subtitle);
+        --header-size: var(--xl-header);
     }
 }
 
@@ -39,13 +58,28 @@
     :root {
         --logo-text-size: var(--l-logo-text);
         --paragraph-size: var(--l-paragraph);
+        --title-size: var(--l-title);
+        --subtitle-size: var(--l-subtitle);
+        --header-size: var(--l-header);
     }
 }
 
 @media screen and (max-width: 768px) {
-
+    :root {
+        --logo-text-size: var(--s-logo-text);
+        --paragraph-size: var(--s-paragraph);
+        --title-size: var(--s-title);
+        --subtitle-size: var(--s-subtitle);
+        --header-size: var(--s-header);
+    }
 }
 
 @media screen and (max-width: 480px) {
-
+    :root {
+        --logo-text-size: var(--xs-logo-text);
+        --paragraph-size: var(--xs-paragraph);
+        --title-size: var(--xs-title);
+        --subtitle-size: var(--xs-subtitle);
+        --header-size: var(--xs-header);
+    }
 }
